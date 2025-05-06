@@ -5,6 +5,8 @@ import "./styles/terminal.css"
 const lines = [
   "> INITIATE EMPLOYER.DISTRESS.PING...",
   "Signal acquired.",
+  "Loading reciever data...",
+  "Reciever data loaded.",
   "Ranking: Tech Priest Neophyte",
   "Subject: Gabriel Kassarp",
   "Classification: Fullstack Developer",
