@@ -18,6 +18,8 @@ export default function TerminalIntro({ onFinish }) {
   const [displayedLines, setDisplayedLines] = useState([]);
   const [lineIndex, setLineIndex] = useState(0);
 
+  
+
   useEffect(() => {
     if (lineIndex < lines.length) {
       const timer = setTimeout(() => {
@@ -31,7 +33,14 @@ export default function TerminalIntro({ onFinish }) {
   }, [lineIndex]);
 
   return (
+    
     <div className="terminal-screen">
+        {lineIndex === 0 && (
+  <div className="incoming-banner flicker">
+    ⬤ INCOMING TRANSMISSION...
+  </div>
+)}
+
       {displayedLines.map((line, i) => (
         <div key={i} className="typed-line">{line}</div>
       ))}

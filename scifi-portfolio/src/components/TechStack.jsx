@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/Techstack.css'
+
 
 export default function Techstack() {
   return (
     <div>
-        <details className='techstack' open>
+        <details className='techstack'>
             <summary className='techstack-summary'>Tech Stack</summary>
             <div className='techstack-content'>
                 <h4>Frontend Capabilities</h4>
