@@ -7,11 +7,11 @@ export default {
     theme: {
       extend: {
         colors: {
-          terminal: "#00ff00",
-          background: "#000000",
+          terminal: '#00ff00',
+          background: '#000000',
         },
         fontFamily: {
-          mono: ["Fira Code", "monospace"],
+          mono: ['"Courier New"', 'monospace'],
         },
       },
     },

@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 const TerminalIntro = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-start text-terminal bg-black font-mono text-lg p-4 relative overflow-hidden">
-      {/* CRT Scanlines */}
+      
       <div className="absolute inset-0 pointer-events-none z-10 bg-[radial-gradient(rgba(0,255,0,0.08)_1px,transparent_1px)] [background-size:3px_3px] mix-blend-screen animate-flicker"></div>
 
-      {/* Flicker mask */}
+ 
       <div className="absolute inset-0 pointer-events-none z-10 bg-black/10 animate-terminal-flicker"></div>
 
       <p className="mb-2 text-terminal">

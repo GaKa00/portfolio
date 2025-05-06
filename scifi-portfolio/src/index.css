@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-black text-terminal font-mono;
-  background-image: radial-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 0);
-  background-size: 2px 2px;
-  text-shadow: 0 0 4px #00ff00;
+/* Terminal flicker and scanline effects */
+@keyframes terminal-flicker {
+  0%, 100% { opacity: 0.95; }
+  10% { opacity: 0.97; }
+  50% { opacity: 0.92; }
+  75% { opacity: 0.98; }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.95; }
+}
+
+.animate-terminal-flicker {
+  animation: terminal-flicker 0.2s infinite;
+}
+
+.animate-flicker {
+  animation: flicker 1s infinite;
 }
