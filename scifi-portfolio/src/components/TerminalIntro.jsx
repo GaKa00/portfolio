@@ -8,7 +8,8 @@ const lines = [
   "Ranking: Tech Priest Neophyte",
   "Subject: Gabriel Kassarp",
   "Classification: Fullstack Developer",
-  "Recieving data burst..."
+  "Recieving data burst...",
+  "Data burst recieved, uploading profile..."
 ];
 
 export default function TerminalIntro({ onFinish }) {

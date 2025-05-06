@@ -20,7 +20,8 @@ A green-on-black sci-fi terminal interface where a user sends a distress signal 
 ### Core System
 - [x] React + Tailwind starter setup
 - [x] Terminal UI Theme (green on black)
-- [ ] Typing intro: `INITIATE DISTRESS SIGNAL`
+- [x] Typing intro: `INITIATE DISTRESS SIGNAL`
+- [-] Add typewriter and loading bar + complete animation
 - [ ] Response data burst: About, Projects, etc.
 - [ ] Static glitch / flicker animations
 - [ ] Scroll-based reveals for each section
