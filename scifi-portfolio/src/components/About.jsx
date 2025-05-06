@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <div>
         <div className="border border-green-500 p-4">
-          <img></img>
+          <img src="../assets/mechanicus.png"/>
           <h3>Additional Info</h3>
           <p>
             {" "}
