@@ -1,0 +1,53 @@
+/* src/components/terminal.css */
+
+.terminal-screen {
+    font-family: 'Courier New', monospace;
+    color: #00ff88;
+    background: black;
+    padding: 2rem;
+    height: 100vh;
+    overflow: hidden;
+    white-space: pre-wrap;
+    animation: flicker 0.2s infinite alternate;
+    position: relative;
+  }
+  
+  .typed-line {
+    line-height: 1.4;
+    text-shadow: 0 0 2px #0f0, 0 0 10px #0f0;
+  }
+  
+  .cursor {
+    display: inline-block;
+    animation: blink 0.8s steps(2, start) infinite;
+  }
+  
+  /* Flicker animation */
+  @keyframes flicker {
+    0% { opacity: 0.99; }
+    50% { opacity: 0.95; }
+    100% { opacity: 1; }
+  }
+  
+  /* Cursor blinking */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Optional scanline overlay */
+  .terminal-screen::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 255, 0, 0.05),
+      rgba(0, 255, 0, 0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+  }
+  
