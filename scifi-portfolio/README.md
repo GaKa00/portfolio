@@ -1,12 +1,63 @@
-# React + Vite
+# ⚙️ Tech-Priest Terminal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A green-on-black sci-fi terminal interface where a user sends a distress signal to a Tech-Priest of Mars (you). In response, they receive your sacred data logs: About, Projects, Tech Stack, and Contact Routing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Built With
 
-## Expanding the ESLint configuration
+- React (Vite)
+- TailwindCSS
+- Framer Motion
+- React Icons
+- react-simple-typewriter
+- react-scroll
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📋 TODO
+
+### Core System
+- [x] React + Tailwind starter setup
+- [x] Terminal UI Theme (green on black)
+- [ ] Typing intro: `INITIATE DISTRESS SIGNAL`
+- [ ] Response data burst: About, Projects, etc.
+- [ ] Static glitch / flicker animations
+- [ ] Scroll-based reveals for each section
+- [ ] Audio embed (optional: Smiles from Juran)
+
+### Visual Effects
+- [ ] Add CRT scanlines
+- [ ] Simulate terminal output (chunked, timed)
+- [ ] Use glyph-like icons / custom ASCII frames
+
+### Contact Form
+- [ ] Custom “Comm-Link” input fields
+- [ ] Fake transmission sending animation
+
+### Deployment
+- [ ] Build with `vite build`
+- [ ] Deploy to GitHub Pages
+
+
+
+
+Booting Sequence (Intro Terminal)
+Retro scanlines + flicker
+
+Typing: > INITIATE DISTRESS.PING...
+Animation: "Signal acquired. Subject: [Your Name], Rank: Tech-Priest. Preparing data burst."
+Response Data Package (Main Portfolio)
+Data is "streamed in" as blocks:
+
+IDENT PROFILE: → About Me
+AUGMENTATION LOG: → Projects
+AUTHORIZED SCHEMATICS: → Tech Stack
+CONTACT ROUTING: → Contact form / comm-link
+
+UI/Styling Ideas
+Green/amber terminal colors or glowing red cog-mechanicus hues
+CRT scanline + glitch effects
+Glyph-like icon buttons (React Icons + custom SVGs)
+Background: moving particles or mechanical ASCII art
+
