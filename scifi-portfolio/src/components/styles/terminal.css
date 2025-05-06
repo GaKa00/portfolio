@@ -1,4 +1,4 @@
-/* src/components/terminal.css */
+
 
 .terminal-screen {
     font-family: 'Courier New', monospace;
@@ -8,7 +8,7 @@
     height: 100vh;
     overflow: hidden;
     white-space: pre-wrap;
-    animation: flicker 0.2s infinite alternate;
+    animation: flicker 0.3s infinite alternate;
     position: relative;
   }
   
@@ -22,21 +22,20 @@
     animation: blink 0.8s steps(2, start) infinite;
   }
   
-  /* Flicker animation */
+
   @keyframes flicker {
     0% { opacity: 0.99; }
     50% { opacity: 0.95; }
     100% { opacity: 1; }
   }
   
-  /* Cursor blinking */
   @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
   }
   
-  /* Optional scanline overlay */
+
   .terminal-screen::before {
     content: "";
     position: absolute;
@@ -53,12 +52,12 @@
 
   .incoming-banner {
     position: absolute;
-    top: 1rem;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     color: #00ff88;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     text-shadow: 0 0 4px #0f0;
     z-index: 10;
@@ -76,6 +75,9 @@
     100% { opacity: 1; }
   }
   
+
+
+  
   .terminal-shell {
     font-family: 'Courier New', monospace;
     color: #00ff88;
@@ -86,6 +88,7 @@
     flex-direction: column;
     overflow-y: auto;
     border-top: 1px solid #00ff88;
+     animation: flicker 0.3s infinite alternate;
   }
   
   .terminal-header {
@@ -102,9 +105,7 @@
   .terminal-content {
     flex-grow: 1;
     overflow-y: auto;
-    border: 1px solid #00ff88;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0 0 10px #0f0;
   }
   

@@ -14,9 +14,11 @@ function App() {
         <TerminalIntro onFinish={() => setIntroComplete(true)} />
       ) : (
         <TerminalShell>
+          <div className="flex flex-wrap">
          <About/>
          <Techstack/>
          <Projects/>
+          </div>
          
         </TerminalShell>
       )}
