@@ -21,16 +21,15 @@ A green-on-black sci-fi terminal interface where a user sends a distress signal 
 - [x] React + Tailwind starter setup
 - [x] Terminal UI Theme (green on black)
 - [x] Typing intro: `INITIATE DISTRESS SIGNAL`
-- [-] Add typewriter and loading bar + complete animation
-- [ ] Response data burst: About, Projects, etc.
-- [ ] Static glitch / flicker animations
-- [ ] Scroll-based reveals for each section
-- [ ] Audio embed (optional: Smiles from Juran)
-
-### Visual Effects
-- [ ] Add CRT scanlines
-- [ ] Simulate terminal output (chunked, timed)
-- [ ] Use glyph-like icons / custom ASCII frames
+- [x] Add typewriter and loading bar + complete animation
+- [-] Apply Static effect onFinish (see App.jsx and Slack dm)
+- [ ] Append Screenrecordings of projects in projects.json
+- [ ] Apply Animation and styling for TechStack
+- [ ] Adjust video expand, and animations for carousel in Projects
+- [ ] Adjust About me section, apply image, typewriter and image overlay
+- [ ] Adjust contact me, add CTA button
+- [ ]  Make Contact form, + loader + verification
+- [ ] Check for responsivity
 
 ### Contact Form
 - [ ] Custom “Comm-Link” input fields
@@ -59,6 +58,6 @@ CONTACT ROUTING: → Contact form / comm-link
 UI/Styling Ideas
 Green/amber terminal colors or glowing red cog-mechanicus hues
 CRT scanline + glitch effects
-Glyph-like icon buttons (React Icons + custom SVGs)
+
 Background: moving particles or mechanical ASCII art
 
