@@ -53,7 +53,7 @@ export default function TerminalIntro({ onFinish }) {
         cursor={false}
         typeSpeed={30}
         deleteSpeed={0}
-        delaySpeed={0}
+        delaySpeed={10}
       />
     </div>
 
