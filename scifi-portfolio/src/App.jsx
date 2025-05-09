@@ -20,9 +20,9 @@ function App() {
 
   return (
     <>
-      {grainActive && <GrainOverlay/>}
-
-      {!introComplete ? (
+      {grainActive ? (
+        <GrainOverlay />
+      ) : !introComplete ? (
         <TerminalIntro onFinish={handleFinish} />
       ) : (
         <TerminalShell>

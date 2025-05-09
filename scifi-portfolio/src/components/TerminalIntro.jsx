@@ -32,7 +32,7 @@ export default function TerminalIntro({ onFinish }) {
       setTimeout(() => {
         setShowGrain(false);
         onFinish?.();
-      }, 500);
+      }, 750);
     }
   }, [lineIndex]);
 
