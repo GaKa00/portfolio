@@ -4,22 +4,33 @@ import TerminalShell from "./components/TerminalShell";
 import About from "./components/About";
 import Techstack from "./components/Techstack";
 import Projects from "./components/Projects";
+import GrainOverlay from "./components/GrainOverlay";
 
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
+  const [grainActive, setGrainActive] = useState(false);
+
+  const handleFinish = () => {
+    setGrainActive(true);
+    setTimeout(() => {
+      setGrainActive(false);
+    }, 500);
+    setIntroComplete(true);
+  };
 
   return (
     <>
+      {grainActive && <GrainOverlay/>}
+
       {!introComplete ? (
-        <TerminalIntro onFinish={() => setIntroComplete(true)} />
+        <TerminalIntro onFinish={handleFinish} />
       ) : (
         <TerminalShell>
           <div className="flex flex-wrap">
-         <About/>
-         <Techstack/>
-         <Projects/>
+            <About />
+            <Techstack />
+            <Projects />
           </div>
-         
         </TerminalShell>
       )}
     </>
