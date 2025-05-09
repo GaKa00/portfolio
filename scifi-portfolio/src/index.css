@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Terminal flicker and scanline effects */
+.body{
+  margin: 0;
+  padding: 0;
+
+}
+
+
 @keyframes terminal-flicker {
   0%, 100% { opacity: 0.95; }
   10% { opacity: 0.97; }

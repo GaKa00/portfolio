@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import projectData from "../data/projects.json";
 import "./styles/projects.css";
 
@@ -6,6 +6,22 @@ export default function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [glitch, setGlitch] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        exitFullscreen();
+      }
+    };
+
+    if (isFullscreen) {
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isFullscreen]);
 
   const handleNext = () => {
     triggerGlitch(() => {
@@ -46,7 +62,7 @@ export default function Projects() {
           isFullscreen ? "fullscreen" : ""
         }`}
       >
-        <div className="video-container" onClick={toggleFullscreen}>
+        <div className="video-container cursor-pointer" onClick={toggleFullscreen}>
           <video
             src={project.video}
             controls
@@ -54,6 +70,7 @@ export default function Projects() {
             className="project-video"
             onEnded={exitFullscreen}
             autoPlay={isFullscreen}
+            
           />
           {isFullscreen && <div className="static-overlay" />}
         </div>
