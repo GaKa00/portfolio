@@ -6,16 +6,16 @@
 
 .about-box {
   max-width:60%;
-  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #111;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(9, 172, 58, 0.3);
   padding: 1.5rem;
   box-sizing: border-box;
   color: #00ff88;
   gap: 1.5rem;
+  border: #00ff88 2px solid;
 }
 
 .image-wrapper {

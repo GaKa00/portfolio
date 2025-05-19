@@ -1,40 +1,72 @@
-import React from 'react'
-
+import React, { useState } from "react";
+import "./styles/techstack.css";
 
 export default function Techstack() {
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const techstack = [
+    {
+      name: "Frontend ",
+      tags: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Vue",
+        "Next.js",
+        "Nuxt",
+        "Tailwind CSS",
+      ],
+    },
+    {
+      name: "Backend",
+      tags: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Prisma",
+        "Firebase",
+        "Supabase",
+      ],
+    },
+    {
+      name: "Learning",
+      tags: ["Java SE 11", "C #", "Spring Boot"],
+    },
+  ];
+
+  const activeTab = techstack[activeTabIndex];
+
   return (
     <div>
-        <details className='techstack'>
-            <summary className='techstack-summary'>Tech Stack</summary>
-            <div className='techstack-content'>
-                <h4>Frontend Capabilities</h4>
-                <ul className='techstack-list'>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>React.js</li>
-                    <li>Vue</li>
-                    <li>Next.js</li>
-                    <li>Nuxt</li>
-                    <li>Tailwind CSS</li>
-                    </ul>
-                <h4>Backend Capabilities</h4>
-                    <ul className='techstack-list'>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                    <li>Prisma</li>
-                    <li>Firebase</li>
-                    <li>Supabase</li>
-                   </ul>
-
-
+      <div className="techstack-card">
+        <div className="techstack-tabs">
+          {techstack.map((tab, index) => (
+            <div
+              key={index}
+              className={`techstack-tab ${
+                index === activeTabIndex ? "active" : ""
+              }`}
+              onClick={() => setActiveTabIndex(index)}
+            >
+              {tab.name}
             </div>
+          ))}
+        </div>
+        
 
-
-        </details>
+        <div className="techstack-content">
+          <h4 className="techstack-title">{activeTab.name}</h4>
+          <ul className="techstack-list">
+            {activeTab.tags.map((tag, idx) => (
+              <li key={idx} className="techstack-tag">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

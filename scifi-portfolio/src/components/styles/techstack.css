@@ -1,0 +1,55 @@
+.techstack-card {
+  border: 1px solid #00ff00;
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  border-radius: 8px;
+ width: 800px;
+  margin: 0 auto;
+}
+
+.techstack-tabs {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.techstack-tab {
+  background: none;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.techstack-tab.active {
+  background-color: #00ff00;
+  color: black;
+}
+
+.techstack-content {
+  border: 1px solid #00ff00;
+}
+
+.techstack-title {
+  margin-bottom: 0.5rem;
+}
+
+.techstack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 4px;
+}
+
+.techstack-tag {
+  background-color: #003300;
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
