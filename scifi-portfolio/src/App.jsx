@@ -30,7 +30,7 @@ function App() {
       ) : (
         <TerminalShell>
           <div className="layout-container">
-            <div className="column">
+            <div className="row">
               <div className="row">
                 <About />
                 <Techstack />
