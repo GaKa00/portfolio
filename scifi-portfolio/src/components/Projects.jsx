@@ -56,7 +56,7 @@ export default function Projects() {
   const project = projectData[currentIndex];
 
   return (
-    <div className="carousel-wrapper">
+   
       <div
         className={`project-card ${glitch ? "glitch" : ""} ${
           isFullscreen ? "fullscreen" : ""
@@ -93,7 +93,7 @@ export default function Projects() {
           </div>
         )}
       </div>
-    </div>
+    
   );
 }
 
