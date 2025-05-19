@@ -39,8 +39,10 @@ export default function Techstack() {
   const activeTab = techstack[activeTabIndex];
 
   return (
-    <div>
       <div className="techstack-card">
+        <p className="techstack-text"> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet laboriosam suscipit adipisci alias perspiciatis quis ad animi sed illo odio officia eligendi, voluptate sequi in voluptas ea aspernatur iste aliquid odit ex, provident quaerat. Tempora doloribus dolore dolor eligendi nisi nam, iste nihil molestias tempore distinctio odio earum maiores!
+        </p>
         <div className="techstack-tabs">
           {techstack.map((tab, index) => (
             <div
@@ -54,10 +56,7 @@ export default function Techstack() {
             </div>
           ))}
         </div>
-        
-
         <div className="techstack-content">
-          <h4 className="techstack-title">{activeTab.name}</h4>
           <ul className="techstack-list">
             {activeTab.tags.map((tag, idx) => (
               <li key={idx} className="techstack-tag">
@@ -67,6 +66,5 @@ export default function Techstack() {
           </ul>
         </div>
       </div>
-    </div>
   );
 }

@@ -26,7 +26,7 @@ function App() {
         <TerminalIntro onFinish={handleFinish} />
       ) : (
         <TerminalShell>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap ">
             <About />
             <Techstack />
             <Projects />

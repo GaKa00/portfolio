@@ -7,7 +7,6 @@ export default function TerminalShell({ children }) {
         <h1>Gabriel Kassarp</h1>
         <h2>Full Stack Developer</h2>
       </header>
-
       <div className="terminal-content">{children}</div>
     </div>
   );

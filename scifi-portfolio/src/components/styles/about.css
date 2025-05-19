@@ -1,11 +1,7 @@
-.about-container {
-  display: flex;
-  justify-content: between;
-  padding: 1.5rem;
-}
+
 
 .about-box {
-  max-width:60%;
+ max-width: 50%;
   display: flex;
   flex-direction: row;
   background-color: #111;
@@ -59,11 +55,12 @@
   margin-top: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1240px) {
   .about-box {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 100%;
   }
 
   .info-wrapper {

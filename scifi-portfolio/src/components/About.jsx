@@ -3,7 +3,6 @@ import "./styles/about.css"
 
 export default function About() {
   return (
-    <div className="about-container">
       <div className="about-box">
         <div className="image-wrapper">
           <img
@@ -32,6 +31,5 @@ export default function About() {
 
         </div>
       </div>
-    </div>
   );
 }

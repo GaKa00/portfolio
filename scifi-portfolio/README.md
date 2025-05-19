@@ -24,9 +24,9 @@ A green-on-black sci-fi terminal interface where a user sends a distress signal 
 - [x] Add typewriter and loading bar + complete animation
 - [-] Apply Static effect onFinish (see App.jsx and Slack dm)
 - [ ] Append Screenrecordings of projects in projects.json
-- [ ] Apply Animation and styling for TechStack
-- [ ] Adjust video expand, and animations for carousel in Projects
-- [ ] Adjust About me section, apply image, typewriter and image overlay
+- [x] Apply Animation and styling for TechStack
+- [x] Adjust video expand, and animations for carousel in Projects
+- [x] Adjust About me section, apply image, typewriter and image overlay
 - [ ] Adjust contact me, add CTA button
 - [ ]  Make Contact form, + loader + verification
 - [ ] Check for responsivity
