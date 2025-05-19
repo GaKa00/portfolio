@@ -15,7 +15,7 @@ export default function Techstack() {
         "Vue",
         "Next.js",
         "Nuxt",
-        "Tailwind CSS",
+        "Tailwind",
       ],
     },
     {
