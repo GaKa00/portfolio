@@ -33,21 +33,21 @@
 .layout-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; 
+  justify-content: space-around;
 }
 
 
 .row {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 4rem;
 }
 
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 20rem;
 }
 
 @media (min-width: 1024px) {
@@ -58,5 +58,6 @@
 
   .column {
     flex: 1;
+    gap:0;
   }
 }
