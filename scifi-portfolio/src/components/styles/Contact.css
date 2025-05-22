@@ -1,0 +1,27 @@
+.gear {
+  animation: spin 5s linear infinite;
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.modal-button {
+  background-color: #000;
+  color: forestgreen;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid forestgreen;
+  cursor: pointer;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
