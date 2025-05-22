@@ -1,7 +1,7 @@
 [{
     "title": "The Library",
     "description": "My very first  web application that allows users to search for books within the warhammer 40k universe. It features a user-friendly interfce and many tools, such as book rating, summaries and quote saving.",
-    "video": "https://www.youtube.com/watch?v=q5qYIW5cTtw",
+    "video": "https://www.youtube.com/watch?v=1YmjK1A-OV8",
     "tags": ["React", "Node.js", "Express", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]
 },
 {

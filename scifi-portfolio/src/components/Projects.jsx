@@ -67,12 +67,24 @@ export default function Projects() {
             src={project.video}
             controls
             muted
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             className="project-video"
             onEnded={exitFullscreen}
             autoPlay={isFullscreen}
             
           />
-          {isFullscreen && <div className="static-overlay" />}
+          {isFullscreen && <div className="static-overlay">
+            <button
+          className="close-fullscreen-button"
+          onClick={(e) => {
+            e.stopPropagation(); 
+            exitFullscreen();
+          }}
+        >
+          [ X ]
+          </button>
+          </div>
+          }
         </div>
 
         {!isFullscreen && (
