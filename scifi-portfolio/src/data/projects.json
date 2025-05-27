@@ -5,13 +5,13 @@
     "tags": ["React", "Node.js", "Express", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]
 },
 {
-    "title": "The Library 2.0",
+    "title": "The Wild Oasis",
     "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]
 },
 {
-    "title": "The Library 3.0",
+    "title": "The Wild Oasis - Dashboard",
     "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]

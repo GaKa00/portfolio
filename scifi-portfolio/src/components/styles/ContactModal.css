@@ -1,15 +1,14 @@
-
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 999; 
+  z-index: 999;
 }
 
 .contact-container {
@@ -27,26 +26,25 @@
   transform: translate(-50%, -50%);
   z-index: 1000;
   border-radius: 10px;
-  border: 1px solid forestgreen;
+  border: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px forestgreen;
+  box-shadow: 0 0 20px var(--shadow-color);
   padding: 1rem;
 }
 
 .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: #00ff00;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--primary);
 }
 
 .close-button:hover {
-  color: #003300;
+  color: var(--primary-hover);
 }
-
 
 .contact-content {
   background-color: rgba(0, 0, 0, 0.85);
@@ -61,10 +59,10 @@
 }
 
 .contact-content h2 {
-  color: #00ff00;
+  color: var(--primary);
   margin-bottom: 20px;
   font-size: 2rem;
-  text-shadow: 0 0 10px #00ff00;
+  text-shadow: 0 0 10px var(--primary);
 }
 
 .contact-form {
@@ -79,14 +77,14 @@
 .contact-input,
 .contact-textarea {
   width: 100%;
-  background-color: #000;
-  color: #00ff00;
+  background-color: var(--background);
+  color: var(--primary);
   padding: 12px 15px;
-  border: 1px solid forestgreen;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
-  box-shadow: 0 0 5px forestgreen;
+  box-shadow: 0 0 5px var(--shadow-color);
   resize: none;
 }
 
@@ -96,27 +94,28 @@
 
 .contact-input::placeholder,
 .contact-textarea::placeholder {
-  color: #4fff4f;
+  color: var(--primary);
   opacity: 0.6;
 }
 
 .contact-button {
-  background-color: #000;
-  color: #00ff00;
-  border: 1px solid forestgreen;
+  background-color: var(--background);
+  color: var(--primary);
+  border: 1px solid var(--border-color);
   padding: 10px;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
-  box-shadow: 0 0 10px forestgreen;
+  box-shadow: 0 0 10px var(--shadow-color);
   width: 70%;
   margin: auto;
 }
 
 .contact-button:hover {
-  background-color: #003300;
-  box-shadow: 0 0 15px #00ff00;
+  background-color: var(--primary);
+  color: var(--background);
+  box-shadow: 0 0 15px var(--primary);
 }
 
 .contact-icons {
@@ -125,7 +124,6 @@
   align-items: center;
   gap: 10px;
 }
-
 
 @media (max-width: 1024px) {
   .contact-container {

@@ -16,7 +16,6 @@ export default function Contact() {
         <ContactModal onClose={() => setOpen(false)}/>
        ) : (
         <>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Green_cogwheel.svg" alt='cog' className='gear'/>
         <button onClick={()=> setOpen(true)} className='modal-button'>
           Contact
         </button>

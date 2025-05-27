@@ -2,33 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-.body{
-  margin: 0;
-  padding: 0;
-
+:root {
+  --primary: #00ff88;
+  --primary-hover: #00ffcc;
+  --background: #111;
+  --card-bg: #111;
+  --text-primary: #00ff88;
+  --text-secondary: #00ffcc;
+  --border-color: #00ff88;
+  --shadow-color: rgba(9, 172, 58, 0.3);
 }
 
+.body {
+  margin: 0;
+  padding: 0;
+}
 
 @keyframes terminal-flicker {
-  0%, 100% { opacity: 0.95; }
-  10% { opacity: 0.97; }
-  50% { opacity: 0.92; }
-  75% { opacity: 0.98; }
+  0%,
+  100% {
+    opacity: 0.95;
+  }
+  10% {
+    opacity: 0.97;
+  }
+  50% {
+    opacity: 0.92;
+  }
+  75% {
+    opacity: 0.98;
+  }
 }
 
 @keyframes flicker {
-  0%, 100% { opacity: 0.9; }
-  50% { opacity: 0.95; }
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.95;
+  }
 }
 
 .animate-terminal-flicker {
-  animation: terminal-flicker 0.2s infinite;
+  animation: terminal-flicker 1s infinite;
 }
 
 .animate-flicker {
   animation: flicker 1s infinite;
 }
-
 
 .layout-container {
   display: flex;
@@ -36,13 +58,11 @@
   justify-content: space-around;
 }
 
-
 .row {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-
 
 .column {
   display: flex;
@@ -58,6 +78,6 @@
 
   .column {
     flex: 1;
-    gap:0;
+    gap: 0;
   }
 }

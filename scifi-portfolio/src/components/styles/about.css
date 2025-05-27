@@ -1,17 +1,15 @@
-
-
 .about-box {
- max-width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: row;
-  background-color: #111;
+  background-color: var(--card-bg);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(9, 172, 58, 0.3);
+  box-shadow: 0 0 10px var(--shadow-color);
   padding: 1.5rem;
   box-sizing: border-box;
-  color: #00ff88;
+  color: var(--text-primary);
   gap: 1.5rem;
-  border: #00ff88 2px solid;
+  border: var(--border-color) 2px solid;
 }
 
 .image-wrapper {
@@ -33,14 +31,15 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  min-height: 100%;
 }
 
 .about-box h3 {
   text-align: center;
   margin-bottom: 0.75rem;
   font-size: 1.25rem;
-  color: #00ffcc;
+  color: var(--text-secondary);
 }
 
 .about-box p {
@@ -55,6 +54,62 @@
   margin-top: 0.5rem;
 }
 
+.media-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+
+.media-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  background-color: var(--background);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.media-links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 136, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.media-links a:hover {
+  color: var(--primary);
+  border-color: var(--border-color);
+  background-color: rgba(0, 255, 136, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.media-links a:hover::before {
+  left: 100%;
+}
+
+.media-links a:active {
+  transform: translateY(0);
+}
+
 @media (max-width: 1240px) {
   .about-box {
     flex-direction: column;
@@ -65,6 +120,11 @@
 
   .info-wrapper {
     align-items: center;
+  }
+
+  .media-links {
+    justify-content: center;
+    width: 100%;
   }
 
   .about-box ul {

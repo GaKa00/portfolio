@@ -1,35 +1,42 @@
 import React from "react";
-import "./styles/about.css"
+import "./styles/about.css";
 
 export default function About() {
   return (
-      <div className="about-box">
-        <div className="image-wrapper">
-          <img
-            src="../src/assets/mechanicus.png"
-            alt="Mechanicus Symbol"
-            className="about-image"
-          />
-        </div>
-        <div className="info-wrapper">
+    <div className="about-box">
+      <div className="image-wrapper">
+        <img
+          src="../src/assets/mechanicus.png"
+          alt="Mechanicus Symbol"
+          className="about-image"
+        />
+      </div>
+      <div className="info-wrapper">
         <h3>Additional Info</h3>
         <p>
-          The neophyte shows promise and fast learning in the many languages of
-          the Cult Mechanicus. Neophyte Gabriel has presented satisfactory
-          social skills and communication with peers.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          repellendus consequuntur neque laboriosam ipsa perferendis corrupti
+          quasi amet soluta a, et distinctio? Recusandae nam aut fugit
+          aspernatur eos, voluptas animi.
         </p>
         <p>
-          Neophyte Gabriel has shown a strong interest in the following areas:
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, cumque!
         </p>
         <ul>
-          <li>Video Games</li>
-          <li>Warhammer 40K</li>
-          <li>History</li>
-          <li>Cooking</li>
-          <li>Juggling</li>
+          <li>--</li>
+          <li>--</li>
+          <li>--</li>
+          <li>--</li>
+          <li>--</li>
         </ul>
 
+        <div className="media-links">
+          <a href="https://www.linkedin.com/in/your-linkedin-profile">
+            LinkedIn
+          </a>
+          <a href="https://www.github.com/your-github-profile">GitHub</a>
         </div>
       </div>
+    </div>
   );
 }

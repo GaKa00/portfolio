@@ -99,8 +99,8 @@ export default function Projects() {
               ))}
             </div>
             <div className="controls">
-              <button onClick={handlePrev}>&lt; Prev</button>
-              <button onClick={handleNext}>Next &gt;</button>
+              <button className="control-button" onClick={handlePrev}>&lt; Prev</button>
+              <button className="control-button" onClick={handleNext}>Next &gt;</button>
             </div>
           </div>
         )}
