@@ -10,7 +10,7 @@ export default function Contact() {
 
 
   return (
-    <div>
+    <div className='button-container'>
 
        {open ? (
         <ContactModal onClose={() => setOpen(false)}/>

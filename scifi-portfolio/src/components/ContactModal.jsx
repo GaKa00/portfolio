@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/ContactModal.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function ContactModal({ onClose }) {
   const handleSubmit = (e) => {
@@ -17,8 +18,12 @@ export default function ContactModal({ onClose }) {
           <h2>Contact</h2>
 
           <div className="contact-icons">
-            {/* <LinkedinIcon />
-            <GithubIcon /> */}
+           <a href="https://www.linkedin.com/in/gabrielkassarp/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="contact-icon" />
+           </a>
+           <a href="https://github.com/gaka00" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="contact-icon" />
+           </a>
           </div>
 
           <form onSubmit={handleSubmit} className="contact-form">

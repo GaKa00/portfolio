@@ -25,6 +25,13 @@
   gap: 0.5rem;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
 .modal-button::before {
   content: "";
   position: absolute;
