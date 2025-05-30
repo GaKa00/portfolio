@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import projectData from "../data/projects.json";
 import "./styles/projects.css";
+import wildOasisVideo from "../assets/wildoasisweb.mp4";
 
 export default function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,57 +56,68 @@ export default function Projects() {
 
   const project = projectData[currentIndex];
 
-  return (
-   
-      <div
-        className={`project-card ${glitch ? "glitch" : ""} ${
-          isFullscreen ? "fullscreen" : ""
-        }`}
-      >
-        <div className="video-container cursor-pointer" onClick={toggleFullscreen}>
-          <video
-            src={project.video}
-            controls
-            muted
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            className="project-video"
-            onEnded={exitFullscreen}
-            autoPlay={isFullscreen}
-            
-          />
-          {isFullscreen && <div className="static-overlay">
-            <button
-          className="close-fullscreen-button"
-          onClick={(e) => {
-            e.stopPropagation(); 
-            exitFullscreen();
-          }}
-        >
-          [ X ]
-          </button>
-          </div>
-          }
-        </div>
+  const getVideoSource = (videoPath) => {
+    if (videoPath === "/src/assets/wildoasisweb.mp4") {
+      return wildOasisVideo;
+    }
+    return videoPath;
+  };
 
-        {!isFullscreen && (
-          <div className="text-content">
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <div className="tags">
-              {project.tags.map((tag, i) => (
-                <span className="tag" key={i}>
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="controls">
-              <button className="control-button" onClick={handlePrev}>&lt; Prev</button>
-              <button className="control-button" onClick={handleNext}>Next &gt;</button>
-            </div>
+  return (
+    <div
+      className={`project-card ${glitch ? "glitch" : ""} ${
+        isFullscreen ? "fullscreen" : ""
+      }`}
+    >
+      <div
+        className="video-container cursor-pointer"
+        onClick={toggleFullscreen}
+      >
+        <video
+          src={getVideoSource(project.video)}
+          controls
+          muted
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          className="project-video"
+          onEnded={exitFullscreen}
+          autoPlay={isFullscreen}
+        />
+        {isFullscreen && (
+          <div className="static-overlay">
+            <button
+              className="close-fullscreen-button"
+              onClick={(e) => {
+                e.stopPropagation();
+                exitFullscreen();
+              }}
+            >
+              [ X ]
+            </button>
           </div>
         )}
       </div>
-    
+
+      {!isFullscreen && (
+        <div className="text-content">
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-description">{project.description}</p>
+          <div className="tags">
+            {project.tags.map((tag, i) => (
+              <span className="tag" key={i}>
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="controls">
+            <button className="control-button" onClick={handlePrev}>
+              &lt; Prev
+            </button>
+            <button className="control-button" onClick={handleNext}>
+              Next &gt;
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
-

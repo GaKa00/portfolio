@@ -1,19 +1,40 @@
-[{
+[
+  {
     "title": "The Library",
     "description": "My very first  web application that allows users to search for books within the warhammer 40k universe. It features a user-friendly interfce and many tools, such as book rating, summaries and quote saving.",
     "video": "https://www.youtube.com/watch?v=1YmjK1A-OV8",
-    "tags": ["React", "Node.js", "Express", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]
-},
-{
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Chakra UI"
+    ]
+  },
+  {
     "title": "The Wild Oasis",
     "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
-    "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
-    "tags": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]
-},
-{
+    "video": "/src/assets/wildoasisweb.mp4",
+    "tags": ["Next.js", "TypeScript", "Supabase"]
+  },
+  {
     "title": "The Wild Oasis - Dashboard",
     "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
+    "video": "/src/assets/wildoasis.mp4",
+    "tags": ["React", "Supabase"]
+  },
+  {
+    "title": "What to Watch",
+    "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
-    "tags": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Chakra UI"]
-}
+    "tags": ["React Native", "Expo", "Tailwind CSS", "TMDB API", "Firebase"]
+  },
+  {
+    "title": "Lynq - In progress!",
+    "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
+    "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
+    "tags": ["Next.js", "WebRTC", "Tailwind CSS", "Firebase"]
+  }
 ]

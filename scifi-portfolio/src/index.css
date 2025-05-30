@@ -13,7 +13,7 @@
   --shadow-color: rgba(9, 172, 58, 0.3);
 }
 
-.body {
+body {
   margin: 0;
   padding: 0;
 }
@@ -56,28 +56,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 1rem;
 }
 
 .row {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   gap: 20rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 1024px) {
   .row {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .column {
     flex: 1;
     gap: 0;
+    max-width: 100%;
   }
 }
