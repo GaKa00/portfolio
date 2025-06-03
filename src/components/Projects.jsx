@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import projectData from "../data/projects.json";
 import "./styles/projects.css";
 import wildOasisVideo from "../assets/wildoasisweb.mp4";
+import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -100,6 +101,16 @@ export default function Projects() {
       {!isFullscreen && (
         <div className="text-content">
           <h3 className="project-title">{project.title}</h3>
+          {project.github && (
+            <a
+              href={project.github}
+              className="project-github"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub /> View on GitHub
+            </a>
+          )}
           <p className="project-description">{project.description}</p>
           <div className="tags">
             {project.tags.map((tag, i) => (
