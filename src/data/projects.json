@@ -1,7 +1,7 @@
 [
   {
     "title": "The Library",
-    "description": "My very first fullstack web application that allows users to search for books within the warhammer 40k universe. It features a user-friendly interfce and many tools, such as book rating, summaries and quote saving.",
+    "description": "My very first fullstack web application that allows users to search for books within the warhammer 40k universe. It features a user-friendly interface and many tools, such as book rating, summaries and quote saving.",
     "video": "https://www.youtube.com/watch?v=1YmjK1A-OV8",
     "tags": [
       "React",
@@ -15,13 +15,13 @@
   },
   {
     "title": "The Wild Oasis",
-    "description": "A Fullstack web application from the Jonas Schmedtmann React course.  A made up hotel webside where users can book a cabin, edit and delete their bookings.",
+    "description": "A Fullstack web application from the Jonas Schmedtmann React course.  A made up hotel website where users can book a cabin, edit and delete their bookings.",
     "video": "/src/assets/wildoasisweb.mp4",
     "tags": ["Next.js", "TypeScript", "Supabase"]
   },
   {
     "title": "The Wild Oasis - Dashboard",
-    "description": " A suplementary dashboard page for the Wild Oasis hotel website. It features a calendar, a statistics page which takes in data from the reservations made over at teh wild oasis page, and allows for easy handling of reservartions.",
+    "description": " A supplementary dashboard page for the Wild Oasis hotel website. It features a calendar, a statistics page which takes in data from the reservations made over at the wild oasis page, and allows for easy handling of reservations.",
     "video": "/src/assets/wildoasis.mp4",
     "tags": ["React", "Supabase"]
   },
@@ -33,7 +33,7 @@
   },
   {
     "title": "Lynq - In progress!",
-    "description": "A fullstack application, co-devveloped with Filip Haellgren. The application is a communications platform like discord, with steam integration to allow easy access to friends and game sessions.",
+    "description": "A fullstack application, co-developed with Filip Haellgren. The application is a communications platform like discord, with steam integration to allow easy access to friends and game sessions.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["Next.js", "WebRTC", "Tailwind CSS", "Firebase"]
   }

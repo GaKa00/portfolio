@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./styles/ContactModal.css";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 export default function ContactModal({ onClose }) {
@@ -79,6 +79,13 @@ export default function ContactModal({ onClose }) {
               rel="noopener noreferrer"
             >
               <FaGithub className="contact-icon" />
+            </a>
+            <a
+              href="mailto:gkassarp@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope className="contact-icon" />
             </a>
           </div>
 

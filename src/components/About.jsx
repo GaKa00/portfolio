@@ -10,8 +10,8 @@ export default function About() {
           Welcome to my portfolio! I'm a 24 year old developer based in
           Stockholm, Sweden. <br />
           I've been coding for about 2 years now, and I'm still learning new
-          things every day. <br /> <br/>I hope you enjoy my portfolio, and if you have
-          any questions, please don't hesitate to contact me.
+          things every day. <br /> <br />I hope you enjoy my portfolio, and if
+          you have any questions, please don't hesitate to contact me.
         </p>
 
         <p>Gabriel has many interests besides coding, here are a few.</p>
@@ -24,10 +24,8 @@ export default function About() {
         </ul>
 
         <div className="media-links">
-          <a href="https://www.linkedin.com/in/your-linkedin-profile">
-            LinkedIn
-          </a>
-          <a href="https://www.github.com/your-github-profile">GitHub</a>
+          <a href="https://www.linkedin.com/in/gabrielkassarp/">LinkedIn</a>
+          <a href="https://github.com/gaka00">GitHub</a>
         </div>
       </div>
     </div>
