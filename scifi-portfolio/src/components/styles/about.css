@@ -39,11 +39,11 @@
   text-align: center;
   margin-bottom: 0.75rem;
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: var(--primary);
 }
 
 .about-box p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 

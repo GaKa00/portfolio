@@ -4,30 +4,23 @@ import "./styles/about.css";
 export default function About() {
   return (
     <div className="about-box">
-      <div className="image-wrapper">
-        <img
-          src="../src/assets/mechanicus.png"
-          alt="Mechanicus Symbol"
-          className="about-image"
-        />
-      </div>
       <div className="info-wrapper">
-        <h3>Additional Info</h3>
+        <h3>About me</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          repellendus consequuntur neque laboriosam ipsa perferendis corrupti
-          quasi amet soluta a, et distinctio? Recusandae nam aut fugit
-          aspernatur eos, voluptas animi.
+          Welcome to my portfolio! I'm a 24 year old developer based in
+          Stockholm, Sweden. <br />
+          I've been coding for about 2 years now, and I'm still learning new
+          things every day. <br /> <br/>I hope you enjoy my portfolio, and if you have
+          any questions, please don't hesitate to contact me.
         </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, cumque!
-        </p>
+
+        <p>Gabriel has many interests besides coding, here are a few.</p>
         <ul>
-          <li>--</li>
-          <li>--</li>
-          <li>--</li>
-          <li>--</li>
-          <li>--</li>
+          <li>Cooking</li>
+          <li>Gaming</li>
+          <li>Warhammer 40K</li>
+          <li>Juggling</li>
+          <li>Petting cats</li>
         </ul>
 
         <div className="media-links">

@@ -1,7 +1,7 @@
 [
   {
     "title": "The Library",
-    "description": "My very first  web application that allows users to search for books within the warhammer 40k universe. It features a user-friendly interfce and many tools, such as book rating, summaries and quote saving.",
+    "description": "My very first fullstack web application that allows users to search for books within the warhammer 40k universe. It features a user-friendly interfce and many tools, such as book rating, summaries and quote saving.",
     "video": "https://www.youtube.com/watch?v=1YmjK1A-OV8",
     "tags": [
       "React",
@@ -15,25 +15,25 @@
   },
   {
     "title": "The Wild Oasis",
-    "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
+    "description": "A Fullstack web application from the Jonas Schmedtmann React course.  A made up hotel webside where users can book a cabin, edit and delete their bookings.",
     "video": "/src/assets/wildoasisweb.mp4",
     "tags": ["Next.js", "TypeScript", "Supabase"]
   },
   {
     "title": "The Wild Oasis - Dashboard",
-    "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
+    "description": " A suplementary dashboard page for the Wild Oasis hotel website. It features a calendar, a statistics page which takes in data from the reservations made over at teh wild oasis page, and allows for easy handling of reservartions.",
     "video": "/src/assets/wildoasis.mp4",
     "tags": ["React", "Supabase"]
   },
   {
-    "title": "What to Watch",
-    "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
+    "title": "What to Watch . In progress!",
+    "description": "A mobile app that allows users to search for movies and series and save them to their own custom lists. It also features an option to get suggested random movies, when one does not know what to watch.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["React Native", "Expo", "Tailwind CSS", "TMDB API", "Firebase"]
   },
   {
     "title": "Lynq - In progress!",
-    "description": "A complete rewrite of my first web application, The Library. This version is built with Next.js and TypeScript, and features a more modern design and improved performance.",
+    "description": "A fullstack application, co-devveloped with Filip Haellgren. The application is a communications platform like discord, with steam integration to allow easy access to friends and game sessions.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["Next.js", "WebRTC", "Tailwind CSS", "Firebase"]
   }

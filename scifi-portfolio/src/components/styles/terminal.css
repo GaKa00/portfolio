@@ -23,19 +23,19 @@
 
 @keyframes terminal-flicker {
   0% {
-    opacity: 1;
+    opacity: 0.95;
   }
   25% {
-    opacity: 0.97;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
     opacity: 0.98;
   }
+  50% {
+    opacity: 0.92;
+  }
+  75% {
+    opacity: 0.97;
+  }
   100% {
-    opacity: 1;
+    opacity: 0.95;
   }
 }
 
@@ -106,19 +106,30 @@
   font-family: "Courier New", monospace;
   color: var(--primary);
   background: var(--background);
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-
-  animation: terminal-flicker 2s infinite alternate;
+  animation: terminal-flicker 1s infinite;
 }
 
 .terminal-header {
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   text-shadow: 0 0 5px var(--primary);
-  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.terminal-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  z-index: -1;
 }
 
 .terminal-header h1 {
@@ -130,7 +141,7 @@
   flex-grow: 1;
   overflow-x: hidden;
   margin: 1rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--background);
   width: calc(100% - 2rem);
   height: 100%;
   display: flex;
@@ -140,18 +151,18 @@
 
 @keyframes terminal-flicker {
   0% {
-    opacity: 1;
+    opacity: 0.95;
   }
   25% {
-    opacity: 0.97;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
     opacity: 0.98;
   }
+  50% {
+    opacity: 0.92;
+  }
+  75% {
+    opacity: 0.97;
+  }
   100% {
-    opacity: 1;
+    opacity: 0.95;
   }
 }

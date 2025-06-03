@@ -8,6 +8,8 @@ export default function Techstack() {
       name: "Frontend ",
       tags: [
         "HTML5",
+        "PHP",
+        "Wordpress",
         "CSS3",
         "JavaScript",
         "TypeScript",
@@ -25,6 +27,7 @@ export default function Techstack() {
         "Express.js",
         "MongoDB",
         "PostgreSQL",
+        "MySQL",
         "Prisma",
         "Firebase",
         "Supabase",
@@ -32,7 +35,7 @@ export default function Techstack() {
     },
     {
       name: "Learning",
-      tags: ["Java SE 11", "C #", "Spring Boot"],
+      tags: ["Java SE 11",  "Spring Boot", "Kotlin"],
     },
   ];
 
@@ -41,8 +44,10 @@ export default function Techstack() {
   return (
       <div className="techstack-card">
         <p className="techstack-text"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet laboriosam suscipit adipisci alias perspiciatis quis ad animi sed illo odio officia eligendi, voluptate sequi in voluptas ea aspernatur iste aliquid odit ex, provident quaerat. Tempora doloribus dolore dolor eligendi nisi nam, iste nihil molestias tempore distinctio odio earum maiores!
-        </p>
+          Here is my ever growing techstack! <br/> <br/>
+          I code primarily in React/Vue, but I also know a few other languages and frameworks.
+          There may not be a project here that uses all of these, but I have acquired a solid level of experience with all of these langauges and tools.
+          </p>
         <div className="techstack-tabs">
           {techstack.map((tab, index) => (
             <div

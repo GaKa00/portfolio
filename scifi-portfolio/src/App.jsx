@@ -7,8 +7,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import GrainOverlay from "./components/GrainOverlay";
 
-
-
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
   const [grainActive, setGrainActive] = useState(false);
