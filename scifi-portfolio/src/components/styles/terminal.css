@@ -119,6 +119,7 @@
   text-shadow: 0 0 5px var(--primary);
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .terminal-header::before {
@@ -147,6 +148,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .terminal-header {
+    position: relative;
+    padding: 0.5rem 0;
+  }
+
+  .terminal-shell {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .terminal-content {
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
 }
 
 @keyframes terminal-flicker {

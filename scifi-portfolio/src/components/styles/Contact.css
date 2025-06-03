@@ -17,6 +17,7 @@
   border-radius: 5px;
   border: 1px solid var(--border-color);
   cursor: pointer;
+  font-family: "Courier New", monospace;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -29,7 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .modal-button::before {
