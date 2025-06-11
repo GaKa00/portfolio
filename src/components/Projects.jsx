@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import projectData from "../data/projects.json";
 import "./styles/projects.css";
 import wildOasisVideo from "../assets/wildoasisweb.mp4";
+import wildOasisDashboardVideo from "../assets/wildoasis.mp4";
+import libraryVideo from "../assets/40kcomp.mp4";
 import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
@@ -58,10 +60,22 @@ export default function Projects() {
   const project = projectData[currentIndex];
 
   const getVideoSource = (videoPath) => {
-    if (videoPath === "/src/assets/wildoasisweb.mp4") {
-      return wildOasisVideo;
+    // Handle YouTube URLs
+    if (videoPath.startsWith("https://")) {
+      return videoPath;
     }
-    return videoPath;
+
+    // Handle local video files
+    switch (videoPath) {
+      case "../assets/wildoasisweb.mp4":
+        return wildOasisVideo;
+      case "../assets/wildoasis.mp4":
+        return wildOasisDashboardVideo;
+      case "../assets/40kcomp.mp4":
+        return libraryVideo;
+      default:
+        return videoPath;
+    }
   };
 
   return (
