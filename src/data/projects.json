@@ -35,11 +35,12 @@
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["React Native", "Expo", "Tailwind CSS", "TMDB API", "Firebase"]
   },
-  {
-    "title": "Lynq - In progress!",
-    "description": "A fullstack application, co-developed with Filip Haellgren. The application is a communications platform like discord, with steam integration to allow easy access to friends and game sessions.",
+    {
+    "title": "Mr Moolah - In progress!",
+    "description": "A Banking system for a fictional bank. With a backend built in Java, it provides many features one may see in their typical bank. Such as account creation, deposit and withdrawal, fraud detection, interest rates, loan applications and more.",
     "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
-    "github": "https://github.com/filipHaellgren/sync-up",
-    "tags": ["Next.js", "WebRTC", "Tailwind CSS", "Firebase"]
+    "github": "",
+    "tags": ["Java", "MongoDB", "Vue"]
   }
+ 
 ]
