@@ -11,6 +11,8 @@ export default function Projects() {
   const [glitch, setGlitch] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
+
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
@@ -77,6 +79,8 @@ export default function Projects() {
         return videoPath;
     }
   };
+  const videoSrc = project.video ? getVideoSource(project.video) : null;
+  const hasVideo = Boolean(videoSrc && videoSrc.trim() !== "");
 
   return (
     <div
@@ -84,33 +88,35 @@ export default function Projects() {
         isFullscreen ? "fullscreen" : ""
       }`}
     >
-      <div
-        className="video-container cursor-pointer"
-        onClick={toggleFullscreen}
-      >
-        <video
-          src={getVideoSource(project.video)}
-          controls
-          muted
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          className="project-video"
-          onEnded={exitFullscreen}
-          autoPlay={isFullscreen}
-        />
-        {isFullscreen && (
-          <div className="static-overlay">
-            <button
-              className="close-fullscreen-button"
-              onClick={(e) => {
-                e.stopPropagation();
-                exitFullscreen();
-              }}
-            >
-              [ X ]
-            </button>
-          </div>
-        )}
-      </div>
+      {hasVideo && (
+        <div
+          className="video-container cursor-pointer"
+          onClick={toggleFullscreen}
+        >
+          <video
+            src={videoSrc}
+            controls
+            muted
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            className="project-video"
+            onEnded={exitFullscreen}
+            autoPlay={isFullscreen}
+          />
+          {isFullscreen && (
+            <div className="static-overlay">
+              <button
+                className="close-fullscreen-button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  exitFullscreen();
+                }}
+              >
+                [ X ]
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {!isFullscreen && (
         <div className="text-content">

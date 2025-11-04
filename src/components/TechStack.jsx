@@ -23,6 +23,7 @@ export default function Techstack() {
     {
       name: "Backend",
       tags: [
+        "C#",
         "Node.js",
         "Express.js",
         "MongoDB",
@@ -45,7 +46,7 @@ export default function Techstack() {
       <div className="techstack-card">
         <p className="techstack-text"> 
           Here is my ever growing techstack! <br/> <br/>
-          I code primarily in React/Vue, but I also know a few other languages and frameworks.
+          I code primarily in React/Vue/Next.js in the frontend, and Node.js or C# in the backend.  I also know a few other languages and frameworks.
           There may not be a project here that uses all of these, but I have acquired a solid level of experience with all of these langauges and tools.
           </p>
         <div className="techstack-tabs">

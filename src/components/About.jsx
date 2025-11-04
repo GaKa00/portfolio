@@ -7,7 +7,7 @@ export default function About() {
       <div className="info-wrapper">
         <h3>About me</h3>
         <p>
-          Welcome to my portfolio! I'm a 24 year old developer based in
+          Welcome to my portfolio! I'm a 25 year old developer based in
           Stockholm, Sweden. <br />
           I've been coding for about 2 years now, and I'm still learning new
           things every day. <br /> <br />I hope you enjoy my portfolio, and if

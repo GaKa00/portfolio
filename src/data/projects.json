@@ -22,25 +22,27 @@
     "tags": ["Next.js", "TypeScript", "Supabase"]
   },
   {
-    "title": "The Wild Oasis - Dashboard",
-    "description": " A supplementary dashboard page for the Wild Oasis hotel website. It features a calendar, a statistics page which takes in data from the reservations made over at the wild oasis page, and allows for easy handling of reservations.",
-    "video": "../assets/wildoasis.mp4",
-    "github": "",
-    "tags": ["React", "Supabase"]
-  },
-  {
-    "title": "What to Watch - In progress!",
+    "title": "What to Watch ",
     "description": "A mobile app that allows users to search for movies and series and save them to their own custom lists. It also features an option to get suggested random movies, when one does not know what to watch.",
     "github": "https://github.com/GaKa00/WtW",
-    "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
     "tags": ["React Native", "Expo", "Tailwind CSS", "TMDB API", "Firebase"]
   },
-    {
-    "title": "Mr Moolah - In progress!",
-    "description": "A Banking system for a fictional bank. With a backend built in Java, it provides many features one may see in their typical bank. Such as account creation, deposit and withdrawal, fraud detection, interest rates, loan applications and more.",
-    "video": "https://www.youtube.com/watch?v=4g1v7q3x5aE",
+  {
+    "title": "Subscription Tracker",
+    "description": "A subscription tracking API that allows users to track their subscriptions and payments. It has preventive measures against cached requests.",
     "github": "",
+    "tags": ["Node.js", "Express", "Prisma", "PostgreSQL"]
+  },
+    {
+    "title": "Mr Moolah ",
+    "description": "A Banking system for a fictional bank. With a backend built in Java, it provides many features one may see in their typical bank. Such as account creation, deposit and withdrawal, fraud detection, interest rates, loan applications and more.",
+    "github": "https://github.com/GaKa00/mrmoolah",
     "tags": ["Java", "MongoDB", "Vue"]
-  }
+  },
+  {"title": "Path of Irregulars - In Progress",
+    "description": "A Fullstack gwent-like browser game, based of popular manwha 'Tower of God' (Credit to SIU and Webtoon!)",
+    "github": "",
+    "tags": ["Next.js", "TypeScript", "MongoDB", "C#", "ShadCN"]
+}
  
 ]
