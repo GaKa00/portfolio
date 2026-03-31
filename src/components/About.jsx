@@ -14,7 +14,7 @@ export default function About() {
           you have any questions, please don't hesitate to contact me.
         </p>
 
-        <p>I has many interests besides coding, here are a few.</p>
+        <p>I have many interests besides coding, here are a few.</p>
         <ul>
           <li>Cooking</li>
           <li>Gaming</li>
